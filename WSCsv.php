@@ -134,10 +134,10 @@ class WSCsv
                                           ret.push(\"<div><div class='labelrequest'>\" + i + \"</div><div><input type='text' name='filter[\" + i + \"]' id='filter[\" + i + \"]' style='width:400px;' /></div></div>\");
                                         }
                                       });
-                                $('#request').html( form_open + ret.join('<br/>') + '<button type=\'button\' class=\'btn btn-success\' name=\'btnImpor\' id=\'btnImpor\'> Impor Data CSV </button>' + form_close );
+                                $('#request').html( form_open + ret.join('<br/>') + '<button type=\'submit\' class=\'btn btn-success\' name=\'btnImpor\' id=\'btnImpor\'> Impor Data CSV </button>' + form_close );
                                 labelDeskripsi();
                                 labelFilter();
-                                $('#label').html('Isilah boks input di atas untuk menyaring hasil, kemudian tekan <strong>Import Data CSV</strong> untuk mengunduh data.');
+                                $('#label').html('Isilah boks input di atas untuk menyaring hasil, kemudian tekan <strong>Import Data CSV</strong> untuk mengunduh data.<br/>Contoh isian filter: field1 like \'%Fulan%\' and field2 = \'P\'<br/>Contoh isian order: field1 desc, field3');
                             }
                             else
                             {
@@ -149,9 +149,9 @@ class WSCsv
                                           ret.push(i + (pk?'*':''));
                                         }
                                       });
-                                $('#request').html( form_open + '<div><input type=\'file\' id=\'filter[ceesvi]\' name=\'filter[ceesvi]\' accept=\'text/csv\'><button type=\'button\' class=\'btn btn-success\' name=\'btnEksekusi\' id=\'btnEksekusi\'> Eksekusi Sesuai dengan Data CSV </button></div>' + form_close );
+                                $('#request').html( form_open + '<div><input type=\'file\' id=\'filter[ceesvi]\' name=\'filter[ceesvi]\' accept=\'text/csv\'><button type=\'submit\' class=\'btn btn-success\' name=\'btnEksekusi\' id=\'btnEksekusi\'> Eksekusi Sesuai dengan Data CSV </button></div>' + form_close );
                                 $('#labelfield').html( '' );
-                                $('#label').html('Tekan tombol <strong>Unduh Template CSV</strong> untuk mengunduh template. Insert, Update dan Delete memiliki template yang berbeda.<br/>Isi template. Unggah template dengan cara menekan tombol <strong>Eksekusi Sesuai dengan Data CSV</strong>');
+                                $('#label').html('Tekan tombol <strong>Unduh Template CSV</strong> untuk mengunduh template, khusus untuk Update dapat menggunakan CSV yang didapatkan dari Getxxx. Insert, Update dan Delete memiliki template yang berbeda.<br/>Isi template. Unggah template dengan cara menekan tombol <strong>Eksekusi Sesuai dengan Data CSV</strong>');
                                 return ret.join(', ');
                             }
                         }
