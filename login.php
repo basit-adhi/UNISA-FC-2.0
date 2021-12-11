@@ -30,7 +30,7 @@ else
 {
     echo '<div style="margin:auto;width:400px;padding:50"><form action="" method="post">
             <div style="margin:auto;width:200px;"><input type="password" id="pass" name="pass" style="width:200px" /><br/><br/></div>
-            <div style="margin:auto;width:100px;"><input type="submit" value="Login"/></div>
+            <div style="margin:auto;width:100px;"><input type="submit" class="btn btn-success" value="Login"/></div>
           </form></div>';
 }
 ?>
