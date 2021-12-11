@@ -6,3 +6,6 @@ Apabila Anda hanya membutuhkan Importer-Eksporter FEEDER berbasis CSV, maka:
 
 Apabila Anda membutuhkan Injector dan Importer-Eksporter FEEDER berbasis CSV, maka
 - berikan informasi pada bagian SETTING UMUM dan SETTING KHUSUS INJEKTOR pada berkas config.inc.php
+
+Notes:
+Injektor masih dalam tahap perubahan dari WS 1.x ke WS 2.x
