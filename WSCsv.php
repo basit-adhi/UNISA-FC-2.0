@@ -159,7 +159,7 @@ class WSCsv
                     
                     function form(isfile)
                     {
-                        return '<form method=\'POST\' action=\"http".((array_key_exists('HTTPS', $_SERVER) ? (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") : false) ? "s" : "")."://".$_SERVER['HTTP_HOST']."/ws_pddikti/v2/impor_csv.php\" ' + ((isfile)?'enctype=\'multipart/form-data\'':'') + '>' + '<input type=\'hidden\' name=\'tabel\' id=\'tabel\' value=\''+valwstabel+'\' /><input type=\'hidden\' name=\'act\' id=\'act\' value=\''+valwsact+'\' />';
+                        return '<form method=\'POST\' action=\"impor_csv.php\" ' + ((isfile)?'enctype=\'multipart/form-data\'':'') + '>' + '<input type=\'hidden\' name=\'tabel\' id=\'tabel\' value=\''+valwstabel+'\' /><input type=\'hidden\' name=\'act\' id=\'act\' value=\''+valwsact+'\' />';
                     }
                     
                     function array_key_exists(key, array){
