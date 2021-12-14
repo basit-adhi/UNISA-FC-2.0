@@ -9,3 +9,6 @@ Apabila Anda membutuhkan Injector dan Importer-Eksporter FEEDER berbasis CSV, ma
 
 Notes:
 Injektor masih dalam tahap perubahan dari WS 1.x ke WS 2.x
+
+Manual:
+https://pdsi.unisayogya.ac.id/unisa-fc-2-0/
