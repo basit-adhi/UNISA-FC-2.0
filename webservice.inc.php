@@ -229,9 +229,8 @@ class webservice
     {
         $errno  = 0;
         $errstr = "";
-        $http = 'http' . ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') ? 's' : '') . '://';
         /* tidak diperbolehkan ada http:// pada host, sehingga perlu dihilangkan (jika ada) */
-        $fsock = fsockopen(str_replace($http, "", $host), $port, $errno, $errstr, $waktutunggu);
+        $fsock = fsockopen(str_replace($this->pddikti["ws"]["protocol"], "", $host), $port, $errno, $errstr, $waktutunggu);
         /* jika koneksi error */
         if ( ! $fsock )
         {
