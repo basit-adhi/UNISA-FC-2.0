@@ -50,8 +50,9 @@ $institusi["db"]["database"]            = "yourdb_name";
 
 $passwordUNISAFC20              = "passwordAnda";
 /* setting webservice PDDIKTI */
-$pddikti["ws"]["mode"]          = MODE_LIVE;
-$pddikti["ws"]["host"]          = $http."localhost";
+$https                          = true; /* apakah server feeder menggunakan https? isi false jika http*/
+$pddikti["ws"]["mode"]          = MODE_LIVE; /* MODE_LIVE atau MODE_SANDBOX */
+$pddikti["ws"]["host"]          = "localhost";
 $pddikti["ws"]["port"]          = 3003;
 $pddikti["ws"]["expire"]        = 1800; /* dalam detik */
 /* berapa baris data yang diambil dalam satu waktu */
@@ -65,7 +66,8 @@ $pddikti["login"]["username"]   = "your_feederusername";
 $pddikti["login"]["password"]   = "your_feederpassword";
 
 /* setting otomatis */
-$pddikti["ws"]["url"]           = $pddikti["ws"]["host"].":".$pddikti["ws"]["port"]."/ws/".(($pddikti["ws"]["mode"]==MODE_SANDBOX)?"sandbox":"live2").".php";
+$pddikti["ws"]["protocol"]      = ($https) ? "https://" : "http://";
+$pddikti["ws"]["url"]           = $pddikti["ws"]["protocol"].$pddikti["ws"]["host"].":".$pddikti["ws"]["port"]."/ws/".(($pddikti["ws"]["mode"]==MODE_SANDBOX)?"sandbox":"live2").".php";
 
 /**
  * WARNING!!!
