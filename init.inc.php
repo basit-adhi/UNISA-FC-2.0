@@ -1,6 +1,6 @@
 <?php
 /** 
- * v2\init.inc.php
+ * init.inc.php
  * <br/> untuk inisialisasi proses sebelum melakukan aksi yang lain
  * <br/> profil  https://id.linkedin.com/in/basitadhi
  * <br/> buat    2021-10-23
