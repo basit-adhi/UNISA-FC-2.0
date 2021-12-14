@@ -1,6 +1,6 @@
 <?php
 /** 
- * v2\importerFeeder.php
+ * importerFeeder.php
  * <br/> untuk import/ekspor Feeder Berbasis CSV
  * <br/> profil  https://id.linkedin.com/in/basitadhi
  * <br/> buat    2021-11-09
