@@ -1,6 +1,6 @@
 <?php
 /** 
- * v2\func.inc.php
+ * func.inc.php
  * <br/> berisi fungsi-fungsi serbaguna
  * <br/> profil  https://id.linkedin.com/in/basitadhi
  * <br/> buat    2021-10-25
@@ -36,19 +36,26 @@ function ifnull($input, $alternatif)
  */
 function ifkeyexists($kunci, $array, $alternatif)
 {
-    if (is_array($array))
+    if ($kunci != "")
     {
-        if (array_key_exists($kunci, $array))
+        if (is_array($array))
         {
-            return ifnull($array[$kunci], $alternatif);
+            if (array_key_exists($kunci, $array))
+            {
+                return ifnull($array[$kunci], $alternatif);
+            }
+            else
+            {
+                return $alternatif;
+            }
         }
-        else
+        else 
         {
-            return $alternatif;
+            return ifnull($array, $alternatif);
         }
     }
-    else 
+    else
     {
-        return ifnull($array, $alternatif);
+        return $alternatif;
     }
 }
