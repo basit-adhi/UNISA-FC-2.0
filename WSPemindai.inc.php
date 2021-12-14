@@ -18,8 +18,8 @@ define("KELUARGA_DELETE", "KELUARGA_DELETE");
 define("KELUARGA_OTO"   , "KELUARGA_OTO");
 
 /** 
- * WSPemindai.inc.php
- * <br/> Pemindai / Scanner Act Web Service
+ * ObjectAct
+ * <br/> Kelas Act
  * <br/> profil  https://id.linkedin.com/in/basitadhi
  * <br/> buat    2021-12-10
  * <br/> rev     -
@@ -68,7 +68,7 @@ class ObjekAct
 }
 
 /** 
- * v2\WSPemindai.inc.php
+ * WSPemindai.inc.php
  * <br/> Scanner / Pemindai Act Web Service
  * <br/> profil  https://id.linkedin.com/in/basitadhi
  * <br/> buat    2021-10-25
