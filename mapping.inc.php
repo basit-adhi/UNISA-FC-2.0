@@ -1,6 +1,6 @@
 <?php
 /** 
- * v2\mapping.inc.php
+ * mapping.inc.php
  * <br/> untuk melakukan pemetaan antara basis data Institusi dengan basis data PDDIKTI
  * <br/> profil  https://id.linkedin.com/in/basitadhi
  * <br/> buat    2015-10-30
